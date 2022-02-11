@@ -4,7 +4,7 @@ from selenium.webdriver.chrome.options import Options
 
 # Описываем параметр для ввода в коммандной строке
 def pytest_addoption(parser):
-    parser.addoption('--language', action='store', default=None, help="Choose browser: chrome or firefox")
+    parser.addoption('--language', action='store', default=None, help="Choose language: en, ru, fr and another")
 
 
 @pytest.fixture(scope='function')
